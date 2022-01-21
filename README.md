@@ -46,13 +46,24 @@
 - Добавлены иконки соцсетей
 
 
-## Стилизация CSS
+## Стилизация CSS (папка Stylization)
 
 ### Подготовка стилей проекта и header
 
-#### Подготовка стилей
+#### Подготовка стилей 
 
-- 
+- Подключен [normalize.css](https://necolas.github.io/normalize.css/8.0.1/normalize.css)
+- Подключен style.css
+- Добавлены глобальные стили box-sizing:    border-box;
+- Добавлены вспомогательные классы:
+    - list-reset
+    - btn-reset
+    - flex
+- Назначена ширина контейнера.
+
+#### header
+
+-
 
 
 
