@@ -149,6 +149,10 @@ p {
 
 .section-hero {
   padding: 100px 0;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section-hero__content  {
