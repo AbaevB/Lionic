@@ -193,11 +193,17 @@ p {
 }
 
 .section-hero__secure {
+  height: 17px;
+  padding-left: 30px;
   font-size: 11px;
   font-weight: 400;
   line-height: 17,05px;
   text-transform: uppercase;
   color: #787878;
+  background-image: url("../img/secure.svg") ;
+  background-position: left center;
+  background-size: 14px 17px;
+  background-repeat: no-repeat;
 }
 
 /*-----Section services---*/
