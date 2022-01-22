@@ -228,3 +228,26 @@ p {
   margin-bottom: 5px;
 }
 
+/*-----Section Contacts----*/
+
+.section-contact__address {
+  font-style: normal;
+}
+
+.section-contacts__item {
+  flex-direction: column;
+  width: 370px;
+  outline: 1px solid rebeccapurple;
+}
+
+.section-contacts__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.contacts-caption {
+  margin-bottom: 30px;
+}
+
+.contacts-item-link:not(:last-child) {
+  margin-bottom: 5px;
+}
