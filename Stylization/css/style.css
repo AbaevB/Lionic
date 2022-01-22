@@ -50,3 +50,20 @@ h1, h2, h3, h5, h6  {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+/*-----General Styles-----*/
+
+.section-title  {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.section-description  {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.section-offset {
+  padding-top: 87px;
+  padding-bottom: 160px;
+}

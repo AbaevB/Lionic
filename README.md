@@ -60,10 +60,14 @@
     - btn-reset
     - flex
 - Назначена ширина контейнера.
+- Назначены общие классы:
+    - section-title
+    - section-description
+    - section-offset
 
 #### header
 
--
+- 
 
 
 
