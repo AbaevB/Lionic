@@ -251,3 +251,36 @@ p {
 .contacts-item-link:not(:last-child) {
   margin-bottom: 5px;
 }
+
+/*-----Footer-----*/
+
+.lionic-footer  {
+  padding: 42px 0;
+}
+
+.lionic-footer__container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 25px;
+}
+
+.footer-nav {
+  margin-right: 56px;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 32px;
+}
+
