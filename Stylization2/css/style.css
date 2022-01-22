@@ -67,10 +67,22 @@ p {
 .btn-reset  {
   padding: 0;
   border: none;
-  background-color: transparent;
+  background-color: white;
   cursor: pointer;
   outline: none;
 }
+
+.btn  {
+  padding: 15px;
+  color: #fff;
+  background-color: #3172B9;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+
 
 .flex {
   display: flex;
@@ -103,6 +115,7 @@ p {
 
 .lionic-header  {
   padding: 36px 0;
+  background-color: #fff;
   border-bottom: 1px solid #c4c4c4;
 }
 
@@ -120,6 +133,16 @@ p {
 
 .header-nav__item:not(:last-child)  {
   margin-right: 52px;
+}
+
+.header-nav__link {
+  font-weight: 600;
+  color: #1c1c1c;
+  font-size: 15px;
+}
+
+.header-btn {
+  padding: 15px 35px;
 }
 
 /*-----Section hero-----*/
