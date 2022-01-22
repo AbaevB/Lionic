@@ -1,0 +1,286 @@
+html  {
+  box-sizing: border-box;
+}
+
+body  {
+  min-width: 1200px;
+  font-family: 'font', sans-serif;
+}
+
+*, *::before, *::after  {
+  box-sizing: inherit;
+}
+
+a  {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+img  {
+  max-width: 100%;
+}
+
+/*-------Global-------*/
+
+h1, h2, h3, h5, h6  {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset  {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container  {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*-----General Styles-----*/
+
+.section-title  {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.section-description  {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.section-offset {
+  padding-top: 87px;
+  padding-bottom: 160px;
+}
+
+/*-----Header-----*/
+
+.lionic-header  {
+  padding: 36px 0;
+}
+
+.lionic-header__container {
+  align-items: center;
+}
+
+.lionic-header__logo  {
+  margin-right: auto;
+}
+
+.lionic-header__nav {
+  margin-right: 52px;
+}
+
+.header-nav__item:not(:last-child)  {
+  margin-right: 52px;
+}
+
+/*-----Section hero-----*/
+
+.section-hero {
+  padding: 100px 0;
+}
+
+.section-hero__content  {
+  max-width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.section-hero__title  {
+  margin-bottom: 25px;
+}
+
+.section-hero__descrition {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.section-hero__btn  {
+  margin-bottom: 14px;
+}
+
+/*-----Section services---*/
+
+.section-services__title  {
+  text-align: center;
+}
+.section-services__description  {
+  text-align: center;
+}
+
+.services-list__item  {
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  outline: 1px solid rebeccapurple;
+}
+
+.services-list__item:not(:nth-child(4n))  {
+  margin-right: 30px;
+}
+
+.services-list__icon  {
+  margin-bottom: 25px;
+}
+
+.services-list__title {
+  margin-bottom: 15px;
+}
+
+.services-list__text  {
+  text-align: center;
+}
+
+/*-----Section Articles-----*/
+
+.section-articles__list {
+  flex-wrap: wrap;
+}
+
+.section-articles__title  {
+  margin-bottom: 42px;
+}
+
+.section-articles__item {
+  width: 570px;
+  margin-bottom: 30px;
+  outline: 1px solid rebeccapurple;
+}
+
+.section-articles__item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+.blog-preview__image  {
+  object-fit: cover;
+}
+
+.blog-preview__content {
+  padding: 30px;
+}
+
+.blog-previev__time {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.blog-preview__title  {
+  margin-bottom: 15px;
+}
+
+/*-----Section Clients-----*/
+
+.section-clients__title {
+  margin-bottom: 42px;
+}
+
+.section-clients__item  {
+  flex-direction: column;
+  padding-top: 51px;
+  padding-right: 53px;
+  padding-bottom: 32px;
+  padding-left: 36px;
+  outline: 1px solid rebeccapurple;
+}
+
+.section-clients__item:not(:nth-child(3n))  {
+  margin-right: 30px;
+}
+
+.section-clients__description {
+  margin-bottom: 33px;
+
+}
+
+.client-info  {
+  align-items: center;
+  margin-top: auto;
+}
+
+.client-info__image {
+  flex-shrink: 0;
+  width: 67px;
+  margin-right: 17px;
+}
+
+.client-name  {
+  margin-bottom: 5px;
+}
+
+/*-----Section Contacts----*/
+
+.section-contact__address {
+  font-style: normal;
+}
+
+.section-contacts__item {
+  flex-direction: column;
+  width: 370px;
+  outline: 1px solid rebeccapurple;
+}
+
+.section-contacts__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.contacts-caption {
+  margin-bottom: 30px;
+}
+
+.contacts-item-link:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/*-----Footer-----*/
+
+.lionic-footer  {
+  padding: 42px 0;
+}
+
+.lionic-footer__container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 25px;
+}
+
+.footer-nav {
+  margin-right: 56px;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 32px;
+}
+
