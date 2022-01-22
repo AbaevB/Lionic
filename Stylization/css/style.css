@@ -184,3 +184,47 @@ p {
   display: block;
   margin-bottom: 5px;
 }
+
+.blog-preview__title  {
+  margin-bottom: 15px;
+}
+
+/*-----Section Clients-----*/
+
+.section-clients__title {
+  margin-bottom: 42px;
+}
+
+.section-clients__item  {
+  flex-direction: column;
+  padding-top: 51px;
+  padding-right: 53px;
+  padding-bottom: 32px;
+  padding-left: 36px;
+  outline: 1px solid rebeccapurple;
+}
+
+.section-clients__item:not(:nth-child(3n))  {
+  margin-right: 30px;
+}
+
+.section-clients__description {
+  margin-bottom: 33px;
+
+}
+
+.client-info  {
+  align-items: center;
+  margin-top: auto;
+}
+
+.client-info__image {
+  flex-shrink: 0;
+  width: 67px;
+  margin-right: 17px;
+}
+
+.client-name  {
+  margin-bottom: 5px;
+}
+
