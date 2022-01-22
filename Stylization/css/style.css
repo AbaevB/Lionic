@@ -77,3 +77,15 @@ h1, h2, h3, h5, h6  {
 .lionic-header__container {
   align-items: center;
 }
+
+.lionic-header__logo  {
+  margin-right: auto;
+}
+
+.lionic-header__nav {
+  margin-right: 52px;
+}
+
+.header-nav__item:not(:last-child)  {
+  margin-right: 52px;
+}
