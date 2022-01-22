@@ -92,4 +92,10 @@ h1, h2, h3, h5, h6  {
 
 /*-----Section hero-----*/
 
+.section-hero {
+  padding: 100px 0;
+}
 
+.section-hero__content  {
+  max-width: 50%;
+}
