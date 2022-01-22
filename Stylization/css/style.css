@@ -151,3 +151,18 @@ p {
 .services-list__text  {
   text-align: center;
 }
+
+/*-----Section Articles-----*/
+
+.section-articles__list {
+  flex-wrap: wrap;
+}
+
+.section-articles__title  {
+  margin-bottom: 42px;
+}
+
+.section-articles__item {
+  width: 570px;
+  outline: 1px solid rebeccapurple;
+}
