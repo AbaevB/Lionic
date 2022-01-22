@@ -27,6 +27,10 @@ h1, h2, h3, h5, h6  {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -113,4 +117,37 @@ h1, h2, h3, h5, h6  {
 
 .section-hero__btn  {
   margin-bottom: 14px;
+}
+
+/*-----Section services---*/
+
+.section-services__title  {
+  text-align: center;
+}
+.section-services__description  {
+  text-align: center;
+}
+
+.services-list__item  {
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  outline: 1px solid rebeccapurple;
+}
+
+.services-list__item:not(:nth-child(4n))  {
+  margin-right: 30px;
+}
+
+.services-list__icon  {
+  margin-bottom: 25px;
+}
+
+.services-list__title {
+  margin-bottom: 15px;
+}
+
+.services-list__text  {
+  text-align: center;
 }
