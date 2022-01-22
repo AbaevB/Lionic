@@ -148,7 +148,8 @@ p {
 /*-----Section hero-----*/
 
 .section-hero {
-  padding: 100px 0;
+  padding-top: 113px;
+  padding-bottom: 134px;
   background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -163,6 +164,10 @@ p {
 
 .section-hero__title  {
   margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 52px;
+  color: #1c1c1c;
 }
 
 .section-hero__descrition {
