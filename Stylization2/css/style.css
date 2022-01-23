@@ -397,6 +397,7 @@ p {
 .section-contacts__item {
   flex-direction: column;
   width: 370px;
+  padding-top: 48px;
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 29px 29px;
@@ -421,11 +422,27 @@ p {
 
 .contacts-caption {
   margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 180%;
+  color: #1c1c1c;
 }
 
-.contacts-item-link:not(:last-child) {
-  margin-bottom: 5px;
+.contacts-item-text {
+  max-width: 214px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #787878;
 }
+
+.contacts-item-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #787878;
+}
+
 
 /*-----Footer-----*/
 
