@@ -501,6 +501,14 @@ p {
 }
 
 .social-link-tw {
-  background-image: url("../img/twitter.jpg");
+  background-image: url("../img/twitter.svg");
+}
+
+.social-link-linkedin {
+  background-image: url("../img/linkedin.svg");
+}
+
+.social-link-mail {
+  background-image: url("../img/mail.svg") ;
 }
 
