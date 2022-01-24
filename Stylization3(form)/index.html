@@ -308,8 +308,28 @@
         <h2 class="section-title section-join__title">Join us</h2>
         <p class="section-description section-join__description" >Take control of&nbsp;your paid subscriptions today!</p>
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="join-form">
+          <div class="join-form__top flex">
+            <div class="form-fop-left">
+              <input type="text" name="name" placeholder="Name" required class="join-form__input">
+              <input type="email" name="email" placeholder="Email" required class="join-form__input">
+              <input type="tel" name="phone" placeholder="Phone" required class="join-form__input">
+              <select class="join-form__select" name="country">
+                <option class="join-form__option" value="Country" disabled selected>Country</option>
+                <option value="Russia" class="join-form__option">Russia</option>
+                <option value="USA" class="join-form__option">USA</option>
+                <option value="United Kingdom" class="join-form__option">United Kingdom</option>
+                <option value="South Africa" class="join-form__option">South Africa</option>
+                <option value="Colombia" class="join-form__option">Colombia</option>
+                <option value="Saudi Arabia" class="join-form__option">Saudi Arabia</option>
+              </select>
+            </div>
+            <div class="form-top-right">
+              <textarea name="comment" placeholder="Comment"></textarea>
+            </div>
+          </div>
+          <div class="join-form__bottom">
 
-
+          </div>
         </form>
       </div>
     </section>
