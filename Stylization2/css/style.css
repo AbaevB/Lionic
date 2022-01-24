@@ -477,5 +477,30 @@ p {
 }
 
 .footer-copy  {
-
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #787878;
 }
+
+.footer-link  {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #787878;
+}
+
+.social-link  {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-link-tw {
+  background-image: url("../img/twitter.jpg");
+}
+
