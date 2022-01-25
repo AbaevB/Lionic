@@ -217,7 +217,8 @@ __Для стилизации хедера в дальнейшем может п
 
 ## Эффекты анимации (папка Complete).
 
-- анимация ссылок в меню:
+### Анимация ссылок в меню.
+
     ```css
             .header-nav__link {
         font-weight: 600;
@@ -240,7 +241,8 @@ __Для стилизации хедера в дальнейшем может п
         text-decoration:#3172B9  underline;
         }
     ```
-- Анимация кнопок:
+### Анимация кнопок.
+
     ```css
             .btn  {
         padding: 15px;
@@ -267,8 +269,9 @@ __Для стилизации хедера в дальнейшем может п
         background-color: #0E3B6C;
         }
     ```
-- Анимация карточек в секции Сервисы:
-    ```css
+### Анимация карточек в секции Сервисы:
+
+```css
             .services-list__item  {
         transition-property: background-color, color;
         transition-duration: .3s;
@@ -326,8 +329,62 @@ __Для стилизации хедера в дальнейшем может п
         transition-timing-function: ease;
         }
             
-    ```
+```
+### Анимация ссылок контактов.
+
+```css 
+    .contacts-item-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #787878;
+    border: 1 px solid #fff;
+    transition-property: color, border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    }
+
+    .contacts-item-link:hover {
+    color: #71A7E2;
+    }
+
+    .contacts-item-link:focus:not(:active) {
+    color: #787878;
+    border: 1px solid #71A7E2;
+    }
+
+    .contacts-item-link:active  {
+    border: 1 px solid #fff;
+    color: #0E3B6C;
+    }
+``` 
+### Анимация элементов формы:
+
+- Инпуты:
     
+    ```css
+    .join-form__input {
+    width: 251px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    outline: none;
+    padding: 15px 28px;
+    transition-property: background-color, color, border;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    }
 
+    .join-form__input:hover {
+    border: 1px solid #71A7E2;
+    }
 
+    .join-form__input:focus:not(:active)  {
+    border: 1px solid #71A7E2;
+    color: #1c1c1c;
+    background-color: rgba(113, 167, 226, 0.2) ;
+    }
+    ```
 
+    
