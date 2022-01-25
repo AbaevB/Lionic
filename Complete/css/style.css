@@ -80,7 +80,23 @@ p {
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
+  transition: background-color .3s ease;
 }
+
+.btn:hover  {
+  background-color: #71A7E2;
+  ;
+}
+
+.btn:focus {
+  background-color: #3172B9;
+  outline: 1px #71A7E2;
+}
+
+.btn:active {
+  background-color: #0E3B6C;
+}
+
 
 
 
@@ -151,7 +167,23 @@ p {
   font-weight: 600;
   color: #1c1c1c;
   font-size: 15px;
+  transition: color .3s ease;
 }
+
+.header-nav__link:hover  {
+  color: #3172B9;
+}
+
+.header-nav__link:focus:not(:active) {
+  color: #1c1c1c;
+  outline: 1px solid #71A7E2;
+}
+
+.header-nav__link:active  {
+  color: #3172B9;
+  text-decoration:#3172B9  underline;
+}
+
 
 .header-btn {
   padding: 15px 35px;
@@ -239,10 +271,59 @@ p {
   width: 270px;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
+  transition-property: background-color, color;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 
 .services-list__item:not(:nth-child(4n))  {
   margin-right: 30px;
+}
+
+.services-list__item:hover  {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3172B9;
+
+}
+
+.services-list__item:hover .services-list__text  {
+  color: #fff;
+}
+
+.services-list__item:hover path {
+  fill: #fff;
+}
+
+.services-list__item:focus-within {
+  color: #fff;
+  background-color: #71A7E2;
+}
+
+.services-list__item:focus-within .services-list__text  {
+  color: #fff;
+}
+
+.services-list__item:focus-within path  {
+  fill: #fff;
+}
+
+.services-list__item:active {
+  color: #fff;
+  background-color: #0E3B6C;
+}
+
+.services-list__item:active .services-list__text  {
+  color: #fff;
+}
+
+.services-list__item:active path  {
+  fill: #fff;
+}
+
+
+.services-list__item path {
+  transition: fill .3s ease;
 }
 
 .services-list__icon  {
@@ -254,7 +335,6 @@ p {
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
-  color: #1c1c1c;
 }
 
 .services-list__text  {
@@ -263,6 +343,9 @@ p {
   font-weight: 400;
   line-height: 21px;
   color: #787878;
+  transition-property: color;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 
 /*-----Section Articles-----*/
@@ -288,7 +371,61 @@ p {
   overflow: hidden;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
+  transition: background-color .3s ease;
 }
+
+.blog-preview:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3172B9;
+}
+
+.blog-preview:hover .blog-preview__time {
+  color: #fff;
+}
+
+.blog-preview:hover .blog-preview__title  {
+  color: #fff;
+}
+
+.blog-preview:hover .blog-preview__text {
+  color: #fff;
+}
+
+.blog-preview:focus-within  {
+  outline: none;
+  color: #fff;
+  background-color: #71A7E2;
+}
+
+.blog-preview:focus-within .blog-preview__time  {
+  color: #fff;
+}
+
+.blog-preview:focus-within .blog-preview__title {
+  color: #fff;
+}
+
+.blog-preview:focus-within .blog-preview__text  {
+  color: #fff;
+}
+
+.blog-preview:active  {
+  background-color: #0E3B6C;
+}
+
+.blog-preview:active .blog-preview__time  {
+    color: #fff;
+}
+
+.blog-preview:active .blog-preview__title {
+    color: #fff;
+}
+
+.blog-preview:active .blog-preview__text  {
+      color: #fff;
+}
+
 
 .blog-preview__image  {
   object-fit: cover;
@@ -298,13 +435,14 @@ p {
   padding: 30px;
 }
 
-.blog-previev__time {
+.blog-preview__time {
   display: block;
   margin-bottom: 5px;
   font-size: 10px;
   font-weight: 400;
   line-height: 15px;
   color: #787878;
+  transition: color .3s ease;
 }
 
 .blog-preview__title  {
@@ -313,6 +451,7 @@ p {
   font-weight: 600;
   line-height: 26px;
   color: #1c1c1c;
+  transition: color .3s ease;
 }
 
 .blog-preview__text {
@@ -321,6 +460,7 @@ p {
   font-weight: 400;
   line-height: 21px;
   color: #787878;
+  transition: color .3s ease;
 }
 
 /*-----Section Clients-----*/

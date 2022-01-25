@@ -217,10 +217,117 @@ __Для стилизации хедера в дальнейшем может п
 
 ## Эффекты анимации (папка Complete).
 
-- 
+- анимация ссылок в меню:
+    ```css
+            .header-nav__link {
+        font-weight: 600;
+        color: #1c1c1c;
+        font-size: 15px;
+        transition: color .3s ease;
+        }
+
+        .header-nav__link:hover  {
+        color: #3172B9;
+        }
+
+        .header-nav__link:focus {
+        color: #1c1c1c;
+        outline: 1px solid #71A7E2;
+        }
+
+        .header-nav__link:active  {
+        color: #3172B9;
+        text-decoration:#3172B9  underline;
+        }
+    ```
+- Анимация кнопок:
+    ```css
+            .btn  {
+        padding: 15px;
+        color: #fff;
+        background-color: #3172B9;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 15px;
+        text-transform: uppercase;
+        transition: background-color .3s ease;
+        }
+
+        .btn:hover  {
+        background-color: #71A7E2;
+        ;
+        }
+
+        .btn:focus {
+        background-color: #3172B9;
+        outline: 1px #71A7E2;
+        }
+
+        .btn:active {
+        background-color: #0E3B6C;
+        }
+    ```
+- Анимация карточек в секции Сервисы:
+    ```css
+            .services-list__item  {
+        transition-property: background-color, color;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+        }
+        .services-list__item:hover  {
+        cursor: pointer;
+        color: #fff;
+        background-color: #3172B9;
+
+        }
+
+        .services-list__item:hover .services-list__text  {
+        color: #fff;
+        }
+
+        .services-list__item:hover path {
+        fill: #fff;
+        }
+
+        .services-list__item:focus-within {
+        color: #fff;
+        background-color: #71A7E2;
+        }
+
+        .services-list__item:focus-within .services-list__text  {
+        color: #fff;
+        }
+
+        .services-list__item:focus-within path  {
+        fill: #fff;
+        }
+
+        .services-list__item:active {
+        color: #fff;
+        background-color: #0E3B6C;
+        }
+
+        .services-list__item:active .services-list__text  {
+        color: #fff;
+        }
+
+        .services-list__item:active path  {
+        fill: #fff;
+        }
 
 
-
+        .services-list__item path {
+        transition: fill .3s ease;
+        }
+        
+        .services-list__text  {
+        transition-property: color;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+        }
+            
+    ```
+    
 
 
 
