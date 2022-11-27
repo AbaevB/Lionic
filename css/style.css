@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6  {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .section-title  {
   margin-bottom: 40px;
 }
@@ -110,6 +114,40 @@ h1, h2, h3, h4, h5, h6  {
 
 .hero__btn  {
   margin-bottom: 14px;
+}
+
+/*------------services------------*/
+
+.services__title  {
+  text-align: center;
+}
+
+.services__descr  {
+  text-align: center;
+}
+
+.services-item {
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 270px;
+  outline: 1px solid purple;
+}
+
+.services-item:not(:nth-child(4n))  {
+  margin-right: 30px;
+}
+
+.services-item__icon  {
+  margin-bottom: 27px;
+}
+
+.services-item__title {
+  margin-bottom: 15px;
+}
+
+.services-item__descr {
+  text-align: center;
 }
 
 
