@@ -218,5 +218,27 @@ p {
 
 /*------------contacts------------*/
 
+.contacts__address  {
+  font-style: normal;
+}
+
+.contacts__item {
+  flex-direction: column;
+  width: 370px;
+  outline: 1px solid purple;
+}
+
+.contacts__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.contacts-item__caption {
+  margin-bottom: 30px;
+}
+
+
+.contacts-item__link:not(:last-child)  {
+  margin-bottom: 5px;
+}
 
 /*------------contacts------------*/
