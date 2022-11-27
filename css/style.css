@@ -87,6 +87,31 @@ h1, h2, h3, h4, h5, h6  {
   margin-right: 52px;
 }
 
+/*------------hero------------*/
+
+.hero {
+  padding: 100px 0;
+}
+
+.hero__content  {
+  max-width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__title  {
+  margin-bottom: 25px;
+}
+
+.hero__descr  {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.hero__btn  {
+  margin-bottom: 14px;
+}
+
 
 
 
