@@ -242,3 +242,16 @@ p {
 }
 
 /*------------contacts------------*/
+
+.footer {
+  padding: 42px 0;
+}
+
+.footer__container  {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left, .footer-right {
+  align-items: center;
+}
