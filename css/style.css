@@ -389,6 +389,19 @@ p {
   color: #787878;
 }
 
+/*------------join------------*/
+
+.join__title  {
+  text-align: center;
+}
+
+.join__descr  {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+
 /*------------footer------------*/
 
 .footer {
