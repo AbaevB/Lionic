@@ -66,12 +66,14 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
             ut&nbsp;laoreet dolore.
           </p>
-          <button class="btn btn-reset hero__btn">
-            free 30&nbsp;day trial
-          </button>
-          <span class="hero__secure">
-            ssl secured connection
-          </span>
+          <div class="hero__wrapper flex">
+            <button class="btn btn-reset hero__btn">
+              free 30&nbsp;day trial
+            </button>
+            <span class="hero__secure">
+              ssl secured connection
+            </span>
+          </div>
         </div>
 
       </div>
@@ -186,7 +188,7 @@
           </li>
           <li class="articles-item">
             <article class="blog-preview flex">
-              <img src="img/blog-photo-3	.jpg" alt="blog photo 3" class="blog-preview__image">
+              <img src="img/blog-photo-3.jpg" alt="blog photo 3" class="blog-preview__image">
               <div class="blog-preview__text">
                 <time class="blog-preview__time" datetime="2022-11-27 01:30">27.11.2022</time>
                 <h3 class="blog-preview__title">
@@ -224,7 +226,7 @@
         </h2>
         <ul class="list-reset flex clients-list">
           <li class="clients-item flex">
-            <p class="cliens-item__descr">
+            <p class="clients-item__descr">
               Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie consequat, vel
               illum dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros et&nbsp;accumsan et&nbsp;iusto odio
               dignissim qui blandit odio dignissim qui blandit molestie consequat.
@@ -242,7 +244,7 @@
             </div>
           </li>
           <li class="clients-item flex">
-            <p class="cliens-item__descr">
+            <p class="clients-item__descr">
               Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie consequat, vel
               illum dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros et&nbsp;accumsan et&nbsp;iusto odio
               dignissim qui blandit odio dignissim qui blandit molestie consequat.
@@ -261,7 +263,7 @@
 
           </li>
           <li class="clients-item flex">
-            <p class="cliens-item__descr">
+            <p class="clients-item__descr">
               Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit esse molestie consequat, vel
               illum dolore eu&nbsp;feugiat nulla facilisis at&nbsp;vero eros et&nbsp;accumsan et&nbsp;iusto odio
               dignissim qui blandit odio dignissim qui blandit molestie consequat.
@@ -288,7 +290,7 @@
         </h2>
         <address class="contacts__address">
           <ul class="contacts-list list-reset flex">
-            <li class="contacts__item flex">
+            <li class="contacts-item contacts-item_1 flex">
               <strong class="contacts-item__caption">
                 Visit Us
               </strong>
@@ -296,7 +298,7 @@
                 Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit.
               </p>
             </li>
-            <li class="contacts__item flex">
+            <li class="contacts-item contacts-item_2 flex">
               <strong class="contacts-item__caption">
                 Call Us
               </strong>
@@ -307,7 +309,7 @@
                 +7 (123) 456-78-90
               </a>
             </li>
-            <li class="contacts__item flex">
+            <li class="contacts-item contacts-item_3 flex">
               <strong class="contacts-item__caption">
                 Email Us
               </strong>
@@ -336,39 +338,52 @@
   </main>
   <footer class="footer">
     <div class="container footer__container flex">
-      <div class="footer-left flex">
-        <a href="#" class="footer-logo">
+      <div class="footer__left flex">
+        <a href="#" class="footer__logo">
           <img src="img/logo.png" alt="Logo">
         </a>
         <small class="footer-copy">
           Copyright ©2017. All Right Reserved
         </small>
       </div>
-      <div class="footer-right flex">
-        <nav class="footer-nav">
-          <ul class="footer-list list-reset flex">
-            <li class="footer-item">
-              <a href="#" target="_blank" class="footer-link">About Us</a>
+      <div class="footer__right flex">
+        <nav class="footer__nav">
+          <ul class="footer__list list-reset flex">
+            <li class="footer__item">
+              <a href="#" target="_blank" class="footer__link">About Us</a>
             </li>
-            <li class="footer-item">
-              <a href="#" target="_blank" class="footer-link">Contact Us</a>
+            <li class="footer__item">
+              <a href="#" target="_blank" class="footer__link">Contact Us</a>
             </li>
-            <li class="footer-item">
-              <a href="#" target="_blank" class="footer-link">Privacy Policy</a>
+            <li class="footer__item">
+              <a href="#" target="_blank" class="footer__link">Privacy Policy</a>
             </li>
-            <li class="footer-item">
-              <a href="#" target="_blank" class="footer-link">Terms Condition</a>
+            <li class="footer__item">
+              <a href="#" target="_blank" class="footer__link">Terms Condition</a>
             </li>
           </ul>
         </nav>
-        <ul class="social list-reset flex">
-          <li class="social-item"><a href="#" class="social-link social-link-tw"></a></li>
-          <li class="social-item"><a href="#" class="social-link social-link-linkedin"></a></li>
-          <li class="social-item"><a href="#" class="social-link social-link-mail"></a></li>
+        <ul class="social-list list-reset flex">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link_twitter">
+
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link_linkedin">
+
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link_mail">
+
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </footer>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
