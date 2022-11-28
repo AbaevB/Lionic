@@ -299,7 +299,7 @@ p {
   margin-bottom: 33px;
   font-size: 14px;
   line-height: 180%;
-   color: #787878;
+  color: #787878;
 }
 
 .clients__user {
@@ -332,10 +332,10 @@ p {
   line-height: 180%;
 }
 
-.clients__post  {
+.clients__post {
   font-size: 14px;
   line-height: 180%;
-  color: #787878 ;
+  color: #787878;
 }
 
 /*------------contacts------------*/
@@ -376,14 +376,14 @@ p {
   line-height: 180%;
 }
 
-.contacts-item__text  {
+.contacts-item__text {
   max-width: 214px;
   font-size: 14px;
   line-height: 180%;
   color: #787878;
 }
 
-.contacts-item__link  {
+.contacts-item__link {
   font-size: 14px;
   line-height: 180%;
   color: #787878;
@@ -400,19 +400,57 @@ p {
   justify-content: space-between;
 }
 
-.footer-left,
-.footer-right {
+.footer__left,
+.footer__right {
   align-items: center;
 }
 
-.footer-logo {
+.footer__logo {
   margin-right: 25px;
 }
 
-.footer-nav {
+.footer__copy {
+  font-size: 12px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.footer__nav {
   margin-right: 56px;
 }
 
-.footer-item:not(:last-child) {
+.footer__link {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #787878;
+}
+
+.footer__item:not(:last-child) {
   margin-right: 28px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.social-list__link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-list__link_twitter {
+  background-image: url("../img/twitter-logo.svg");
+}
+
+.social-list__link_linkedin {
+  background-image: url("../img/linkedin-logo.svg");
+}
+
+.social-list__link_mail {
+  background-image: url("../img/mail-white.svg");
 }
