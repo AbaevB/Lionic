@@ -333,19 +333,40 @@
         <p class="section-descr join__descr">
           Take control of your paid subscriptions today!
         </p>
-       <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
-          <div class="form__top">
-            <div class="form__left">
-
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form">
+          <div class="form__top flex">
+            <div class="form__left flex">
+              <input class="form__input" type="text" name="name" placeholder="Name" id="name" required>
+              <input class="form__input" type="email" name="email" placeholder="E-mail" id="email" required>
+              <input class="form__input" type="tel" name="phone" placeholder="Phone" id="phone">
+              <select class="form__select" name="country" id="country" required>
+                <option class="form__option" value="Country" disabled selected>Country</option>
+                <option class="form__option" value="U.S.A.">U.S.A.</option>
+                <option class="form__option" value="Russia">Russia</option>
+                <option class="form__option" value="France">France</option>
+                <option class="form__option" value="United Kingdom">United Kingdom</option>
+                <option class="form__option" value="Germany">Germany</option>
+                <option class="form__option" value="Colombia">Colombia</option>
+                <option class="form__option" value="Argentine">Argentine</option>
+              </select>
             </div>
             <div class="form__right">
+              <textarea class="form__textarea" name="comment" id="comment" placeholder="Comment" required></textarea>
+            </div>
+          </div>
+          <div class="form__bottom flex">
+            <div class="form__wrapper flex">
+              <button class="btn btn-reset form__btn">
+                get started
+              </button>
+              <label class="form__check" for="">
+                <input class="form__checkbox" type="checkbox" name="confirm" id="confirm" required>
+              I agree with the <a href="#" class="form__link">user agreement</a>
+              </label>
 
             </div>
           </div>
-          <div class="form__bottom">
-
-          </div>
-       </form>
+        </form>
 
       </div>
     </section>
