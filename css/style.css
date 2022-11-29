@@ -13,6 +13,7 @@ html {
 a {
   color: inherit;
   text-decoration: none;
+  outline: none;
 }
 
 img {
@@ -41,6 +42,7 @@ body {
 }
 
 .btn {
+  position: relative;
   padding: 15px 35px;
   font-weight: 600;
   font-size: 15px;
@@ -49,6 +51,37 @@ body {
   background-color: #3172b9;
   color: #fff;
   border-radius: 3px;
+  outline: none;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  left: -3px;
+  bottom: -3px;
+  border-radius: inherit;
+  border: 1px solid #3172b9;
+  outline: none;
+  opacity: 0;
+}
+
+
+.btn:focus:not(:active)::after {
+  opacity: 1;
+}
+
+.btn:hover {
+  background-color: #71A7E2;
+}
+
+.btn:active {
+  background-color: #0e3b6c;
+}
+
+.btn:active::after {
+  opacity: 0;
 }
 
 .flex {
@@ -121,10 +154,40 @@ p {
 }
 
 .header__link {
+  position: relative;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   color: #1c1c1c;
+}
+
+.header__link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3474ba;
+  opacity: 0;
+}
+
+.header__link:focus:not(:active) {
+  outline-offset: 2px;
+  outline: 1px solid #71A7E2;
+}
+
+.header__link:hover {
+  color: #71A7E2;
+}
+
+.header__link:active {
+  color: #3474ba;
+  outline: none;
+}
+
+.header__link:active::after {
+  opacity: 1;
 }
 
 /*------------hero------------*/
@@ -202,6 +265,24 @@ p {
   width: 270px;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.services-item:hover {
+  border-color: #3172b9;
+  background-color: #3172b9;
+}
+
+.services-item:hover .services-item__title {
+  color: #fff;
+}
+
+.services-item:hover .services-item__descr {
+  color: #fff;
+}
+
+.services-item:hover .services-item__icon path {
+  fill: #fff;
 }
 
 .services-item:not(:nth-child(4n)) {
@@ -210,6 +291,10 @@ p {
 
 .services-item__icon {
   margin-bottom: 27px;
+}
+
+.services-item__icon path {
+  fill: #3172b9;
 }
 
 .services-item__title {
@@ -247,6 +332,62 @@ p {
   overflow: hidden;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
+}
+
+.blog-preview__link {
+  position: relative;
+  width: 100;
+}
+
+.blog-preview__link:focus {
+  background-color: #71A7E2;
+}
+
+.blog-preview__link:focus .blog-preview__time {
+  color: #fff;
+}
+
+
+.blog-preview__link:focus .blog-preview__title {
+  color: #fff;
+}
+
+.blog-preview__link:focus .blog-preview__descr {
+  color: #fff;
+}
+
+.blog-preview__link:hover {
+  background-color: #3172b9;
+}
+
+.blog-preview__link:hover .blog-preview__time {
+  color: #fff;
+}
+
+
+.blog-preview__link:hover .blog-preview__title {
+  color: #fff;
+}
+
+.blog-preview__link:hover .blog-preview__descr {
+  color: #fff;
+}
+
+.blog-preview__link:active {
+  background-color: #0e3b6c;
+}
+
+.blog-preview__link:active .blog-preview__time {
+  color: #fff;
+}
+
+
+.blog-preview__link:active .blog-preview__title {
+  color: #fff;
+}
+
+.blog-preview__link:active .blog-preview__descr {
+  color: #fff;
 }
 
 .blog-preview__image {
@@ -389,13 +530,27 @@ p {
   color: #787878;
 }
 
+.contacts-item__link:focus {
+  outline-offset: 2px;
+  outline: 1px solid #71A7E2;
+}
+
+.contacts-item__link:hover {
+  color: #71A7E2;
+}
+
+.contacts-item__link:active {
+  color: #0e3b6c;
+  outline: none;
+}
+
 /*------------join------------*/
 
-.join__title  {
+.join__title {
   text-align: center;
 }
 
-.join__descr  {
+.join__descr {
   margin-bottom: 30px;
   text-align: center;
 }
@@ -405,7 +560,7 @@ p {
   padding-right: 55px;
 }
 
-.form__input  {
+.form__input {
   box-sizing: border-box;
   width: 251px;
   height: 60px;
@@ -414,13 +569,28 @@ p {
   border-radius: 50px;
 }
 
+.form__input:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form__input:hover {
+  border-color: #71A7E2;
+}
+
+.form__input:active {
+  color: #1c1c1c;
+  border-color: #0e3b6c;
+}
+
 .form__input:nth-child(-n+2) {
   margin-bottom: 19px;
 }
 
 
 
-.form__top  {
+.form__top {
   justify-content: space-between;
   margin-bottom: 19px;
 }
@@ -433,7 +603,7 @@ p {
 
 }
 
-.form__right  {
+.form__right {
   width: 49%;
 }
 
@@ -447,6 +617,21 @@ p {
   background-color: #fff;
 }
 
+.form__select:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form__select:hover {
+  border-color: #71A7E2;
+}
+
+.form__select:active {
+  color: #1c1c1c;
+  border-color: #0e3b6c;
+}
+
 .form__textarea {
   width: 100%;
   height: 100%;
@@ -457,15 +642,30 @@ p {
   border-radius: 20px;
 }
 
+.form__textarea:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form__textarea:hover {
+  border-color: #71A7E2;
+}
+
+.form__textarea:active {
+  color: #1c1c1c;
+  border-color: #0e3b6c;
+}
+
 .form__bottom {
   justify-content: flex-end;
 }
 
-.form__wrapper  {
+.form__wrapper {
   flex-direction: column;
 }
 
-.form__btn  {
+.form__btn {
   margin-bottom: 9px;
   min-width: 20px;
   padding-top: 20px;
@@ -473,10 +673,10 @@ p {
   border-radius: 50px;
 }
 
-.form__check  {
-font-size: 12px;
-line-height: 16px;
-color: #787878;
+.form__check {
+  font-size: 12px;
+  line-height: 16px;
+  color: #787878;
 }
 
 .form__checkbox {
@@ -487,7 +687,6 @@ color: #787878;
   color: #3172b9;
   text-decoration: underline;
 }
-
 
 /*------------footer------------*/
 
@@ -535,22 +734,40 @@ color: #787878;
 }
 
 .social-list__link {
-  display: block;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.social-list__link_twitter {
-  background-image: url("../img/twitter-logo.svg");
+.social-list__icon path {
+  fill: #000;
 }
 
-.social-list__link_linkedin {
-  background-image: url("../img/linkedin-logo.svg");
+.social-list__icon_mail path {
+  fill: none;
+  stroke: #000;
 }
 
-.social-list__link_mail {
-  background-image: url("../img/mail-white.svg");
+.social-list__link:focus {
+  outline-offset: 2px;
+  outline: 1px solid #71A7E2;
+}
+
+.social-list__link:hover .social-list__icon path {
+  fill: #71A7E2;
+}
+
+.social-list__link:hover .social-list__icon_mail path {
+  fill: none;
+  stroke: #71A7E2;
+}
+
+.social-list__link:active .social-list__icon path {
+  fill: #3172b9;
+}
+
+.social-list__link:active .social-list__icon_mail path {
+  fill: none;
+  stroke: #3172b9;
 }
