@@ -758,11 +758,13 @@ p {
 
 .social-list__icon path {
   fill: #000;
+  transition: fill 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .social-list__icon_mail path {
   fill: none;
   stroke: #000;
+  transition: stroke 0.3 ease-in-out, outline 0.3s ease-in-out;
 }
 
 .social-list__link:focus {
