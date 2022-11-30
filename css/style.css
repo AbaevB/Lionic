@@ -345,6 +345,7 @@ p {
 .blog-preview__link {
   position: relative;
   width: 100;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .blog-preview__link:focus {
@@ -412,6 +413,7 @@ p {
   font-size: 10px;
   line-height: 150%;
   color: #787878;
+  transition: color 0.3s ease-in-out;
 }
 
 .blog-preview__title {
@@ -420,6 +422,7 @@ p {
   font-size: 20px;
   line-height: 130%;
   color: #1c1c1c;
+  transition: color 0.3s ease-in-out;
 }
 
 .blog-preview__descr {
@@ -427,6 +430,7 @@ p {
   font-size: 14px;
   line-height: 150%;
   color: #787878;
+  transition: color 0.3s ease-in-out;
 }
 
 /*------------clients------------*/
