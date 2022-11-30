@@ -121,6 +121,13 @@
     display: none; /*temporarily*/
 
   }
+  :root {
+    --gap: 15px;
+  }
+  .section-offset {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
   /*---header--576--*/
   .header {
     padding: 15px 0;
@@ -138,6 +145,7 @@
   /*---hero--576--*/
   .hero {
     padding-top: 30px;
+    padding-bottom: 0;
     background-image: none;
   }
   .hero__content  {
@@ -154,5 +162,38 @@
   }
   .hero__btn  {
     min-width: 100%;
+  }
+  /*---services-576--*/
+  .services__title  {
+    text-align: left;
+    margin-bottom: 14px;
+  }
+  .services__descr  {
+    margin-bottom: 1px;
+    text-align: left;
+    line-height: 20px;
+  }
+  .services-item  {
+    min-height: 222px;
+    margin-bottom: 20px;
+    padding: 15px;
+    padding-bottom: 35px;
+  }
+  .services-item__icon  {
+    margin-bottom: 14px;
+    width: 56px;
+    height: 42px;
+  }
+  .services-item__title {
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .services-item__descr {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .services-list  {
+    margin-bottom: 19px;
   }
 }
