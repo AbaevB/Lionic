@@ -540,6 +540,7 @@ p {
   font-size: 14px;
   line-height: 180%;
   color: #787878;
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .contacts-item__link:focus {
@@ -579,6 +580,7 @@ p {
   padding: 16px 28px;
   border: 1px solid #dadada;
   border-radius: 50px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .form__input:focus {
@@ -627,6 +629,7 @@ p {
   border: 1px solid #dadada;
   border-radius: 50px;
   background-color: #fff;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .form__select:focus {
@@ -652,6 +655,7 @@ p {
   resize: none;
   border: 1px solid #dadada;
   border-radius: 20px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .form__textarea:focus {
