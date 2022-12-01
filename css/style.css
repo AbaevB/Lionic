@@ -445,6 +445,11 @@ p {
   transition: color 0.3s ease-in-out;
 }
 
+.articles-center  {
+  display: none;
+  text-align: center;
+}
+
 /*------------clients------------*/
 
 .clients-item {
