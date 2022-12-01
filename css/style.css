@@ -694,10 +694,11 @@ p {
 }
 
 .form__btn {
+  margin-bottom: 16px;
   margin-bottom: 9px;
   min-width: 20px;
   padding-top: 20px;
-  border-bottom: 20px;
+  padding-bottom: 20px;
   border-radius: 50px;
 }
 
