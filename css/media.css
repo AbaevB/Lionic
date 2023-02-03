@@ -8,10 +8,7 @@
 
 @media (max-width: 992px) {
 
-  /*---header992---*/
-  /*.header__nav {
-    display: none;
-  }*/
+
 
 
 
@@ -132,7 +129,7 @@
 
   .services-item {
     margin-bottom: var(--gap);
-    width: calc((100% - (var(--gap))) / 2);
+
   }
 
   .services-item:not(:nth-child(4n)) {
@@ -183,10 +180,10 @@
     margin-right: 0;
   }
 
-  .clients-item {
+  /*.clients-item {
     width: calc((100% - (var(--gap))) / 2);
     margin-bottom: var(--gap);
-  }
+  }*/
 
   /*---footer 768---*/
 
